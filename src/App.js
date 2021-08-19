@@ -4,18 +4,18 @@ import AllMeetupsPage from "./pages/AllMeetups";
 import NewMeetupPage from "./pages/NewMeetup";
 import FavoritesPage from "./pages/Favorites";
 import Layout from "./components/layout/Layout";
-//
+
 function App() {
   return (
     <Layout>
       <Switch>
-        <Route path='/' exact>
+        <Route path="/" exact>
           <AllMeetupsPage />
         </Route>
-        <Route path='/new-meetup' exact>
+        <Route path="/new-meetup">
           <NewMeetupPage />
         </Route>
-        <Route path='/favorites' exact>
+        <Route path="/favorites">
           <FavoritesPage />
         </Route>
       </Switch>
